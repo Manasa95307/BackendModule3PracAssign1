@@ -61,11 +61,11 @@ app.get("/api/recipes", (req, res) => {
 
 // --- Default Route ---
 app.get("/", (req, res) => {
-  res.send("🍳 Recipe API is running successfully!");
+  res.send("Recipe API is running successfully!");
 });
 
 // --- Server Port ---
 const PORT = process.env.PORT || 3000;
 app.listen(PORT, () => {
-  console.log(`✅ Server running on port http://localhost:${PORT}`);
+  console.log(`Server running on port http://localhost:${PORT}`);
 });
